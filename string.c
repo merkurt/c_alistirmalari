@@ -3,7 +3,7 @@
 #include "string.h"
 
 int main(void){
-    //  Çift tırnak içinde tanımlanan stringlerin sonuna otomatik olarak '\n' eklenir.
+    //  Çift tırnak içinde tanımlanan stringlerin sonuna otomatik olarak '\0' eklenir.
 
     //  Bu tanim yonteminde string read-only moddadır degistirilmek istenirse 'undefined behaviour' verir.
     //  Bu sebeple onune 'const' eklenmesi daha sagliklidir.
