@@ -55,7 +55,6 @@ typedef union {
     uint8_t data;
 }union_bit;
 
-
 struct A aYapisi;
 struct B bYapisi;
 int main(void){
