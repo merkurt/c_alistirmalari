@@ -12,9 +12,15 @@ void structSizeof(struct first myStruct){
     printf("SIZEOF - first -> %d, first.x -> %d, first.y -> %d, first.z -> %d", sizeof(myStruct), sizeof(myStruct.x), sizeof(myStruct.y), sizeof(myStruct.z));   
 }
 
+// Structlarda pointer ile islem yapiliyorsa eleman secerken nokta (.) yerine ok (->) kullanilir.
+void structPrint(struct first *myStruct){
+    printf("x -> %d, y -> %d, z -> %f\n", myStruct->x, myStruct->y, myStruct->z);
+}
+
 int main(void){
     struct first one = {3, 4, 5.0};
-    printf("x -> %d, y -> %d, z -> %f\n", one.x, one.y, one.z); 
+    struct first two[5]; // Bu sekilde ayni yapidan pes pese 5 tane tanimlayabiliriz. kullanimi dizi kullanimi ile aynidir
+    structPrint(&one);
     structSizeof(one);
     return EXIT_SUCCESS;
 }
